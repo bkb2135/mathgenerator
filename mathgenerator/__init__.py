@@ -40,7 +40,8 @@ def generate_context(seed = None):
         forward_words = _[2]
     else:
         forward_words = []
-    forward_words.extend(choice[0].split('_')).extend(choice[1].split('_'))
+    forward_words.extend(choice[0].split('_'))
+    forward_words.extend(choice[1].split('_'))
     problem = str(problem)
     solution = str(solution)
     try:
